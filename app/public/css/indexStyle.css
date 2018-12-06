@@ -1,0 +1,84 @@
+<<<<<<< HEAD
+
+.topnav {
+    background-color: rgb(6, 11, 36);
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 720px;
+}
+#tickerBtn {
+    color: rgba(255, 72, 0, 0.87);
+}
+.jumbotron {
+    color: white;
+    background-image: url("https://www.theindianwire.com/wp-content/uploads/2018/10/Stock-Market.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.lead {
+
+    font-size: 150px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+button {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+=======
+
+.topnav {
+    background-color: rgb(6, 11, 36);
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    /* padding-left: 65%; */
+    text-align: right;
+}
+#tickerBtn {
+     color: yellow; 
+
+}
+
+#watchSearch, #watchBtn {
+
+margin: 7px;
+
+}
+
+/* #watchSearch, #watchBtn {
+
+    margin: 7px;
+    
+    } */
+
+#tickerBtn:hover {
+    color: white; 
+
+}
+.jumbotron {
+    color: white;
+    background-image: url("https://www.theindianwire.com/wp-content/uploads/2018/10/Stock-Market.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.lead {
+
+    font-size: 150px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+button {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+
+>>>>>>> 36ffcefcbff8ad0e12b95fa089877c6c5027961f

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="login-container">
+            <form action="signUp.html">
+                <input id="login-username" type="text" placeholder="Username" name="username">
+                <input id="login-password" type="text" placeholder="Password" name="psw">
+                <button id="login-submit" type="submit">Login</button>
+                <button><a href="./signUp.html">Sign Up<a></button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <!--Search Bar-->
+        <form class="form-inline justify-content-center" method="GET" action="">
+
+            <!--NEXT TWO LINES HAVE IDS FOR AJAX CALLS AND ALL API-->
+
+            <input id="tickerSearch" class="form-control mr-sm-2" name="query" type="text" placeholder="AAPL, IBM, FB etc.">
+            <button id="tickerBtn" class="btn btn-outline-success  my-2 my-sm-0" type="submit">Get Stock</button>
+        </form>
+        <p class="lead">Daytrader</p>
+    </div>
+    <div class="card-deck">
+        <div class="card">
+
+            <div class="card-body">
+                <h3 class="card-title" id="card1Title"></h3>
+                <p class="card-text" id="card1Detail"></p>
+                <p class="card-text" id="card1Comp"></p>
+                <p class="card-text">
+                    <small class="text-muted update"></small>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+
+            <div class="card-body">
+                <h1 class="card-title price" id="card2Title"></h1>
+                <p class="card-text">Daytrader, LLC.&trade; score: </p>
+                <h1 class="dtScore"> </h1>
+                <p class="card-text">
+                    <small class="text-muted update"></small>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+
+            <div class="card-body">
+                <h3 class="card-title price" id="card3Title"></h3>
+                <p class="card-text"></p>
+                <p class="card-text">
+                    <small class="text-muted update"></small>
+                </p>
+
+                <table class="table">
+                    <caption id="userWatchlist">Your Watchlist</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Ticker</th>
+                            <th scope="col">Open</th>
+                            <th scope="col">Close</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="watchTable">
+                        <!-- <tr>
+                            <th id="userStock1" scope="row">AAPL</th>
+                            <td id="card2Title">Thornton</td>
+                            <td id="dtScore">Mark</td>
+                        </tr>
+                        <tr>
+                            <th id="userStock2" scope="row">AAPL</th>
+                            <td id="card2Title">Thornton</td>
+                            <td id="dtScore">Jacob</td>
+                        </tr>
+                        <tr>
+                            <th id="userStock3" scope="row">AAPL</th>
+                            <td id="card2Title">the Bird</td>
+                            <td id="dtScore">Larry</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <a id="watchBtn" class="btn btn-primary btn-md learn_more_buttons mr-sm-2" href="" role="button">add to
+                    Watchlist</a>
+                <input id="watchSearch" class="form-control mr-sm-2" name="query" type="text" placeholder="AAPL, IBM, FB etc.">
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-4">
+    <p class="lead">
+        <!--action buttons-->
+        <!-- <a class="btn btn-primary btn-md learn_more_buttons mr-sm-2" href="" role="button">add to Watchlist</a>
+            <a class="btn btn-primary btn-md learn_more_buttons mr-sm-2" href="" role="button">Interactive Chart</a>
+        </p>
+    </div> -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+        <script src="./js/signup.js"></script>
+        <script src="./js/login.js"></script>
+        <script src="./js/all.js"></script>
+
+</body>
+
+</html>
